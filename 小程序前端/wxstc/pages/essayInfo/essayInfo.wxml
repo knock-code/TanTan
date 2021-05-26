@@ -1,0 +1,40 @@
+<!--pages/essayInfo/essayInfo.wxml-->
+<!-- title信息 文章标题，作者，时间 -->
+<view>
+  <text class="titleBig">{{info.essayAndComment.essay_title}}</text>
+  <view class="title02">
+    <image class="zuozhe" src="../../images/me_other/touxiang03.png"></image>
+    <text decode="{{true}}">&nbsp;&nbsp;{{info.data}}</text>
+    <text class="sendTime">{{info.essayAndComment.essay_time}}</text>
+  </view>
+</view>
+
+<!-- 内容 -->
+<view>
+  <text>{{info.essayAndComment.essay_content}}</text>
+</view>
+
+<!-- 喜欢数 -->
+<text></text>
+
+<!-- 评论区 -->
+<view>
+  <input type="text"/>
+  <button>发表</button>
+</view>
+
+<!-- 评论列表 -->
+<view>
+  <view>
+    <image></image>
+    <text></text>
+  </view>
+  <text></text>
+  <view>
+    <text></text>
+    <view>
+      <image></image>
+      <text></text>
+    </view>
+  </view>
+</view>

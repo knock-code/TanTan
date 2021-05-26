@@ -1,0 +1,28 @@
+/* pages/register/register.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: lightgrey;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  /*border: 3rpx solid orange;*/
+}
+
+.v1{
+  margin-top: 20px;
+  margin-left: 33px;
+  width: 350px;
+  border-bottom: 2px solid rgb(129, 209, 255);
+  display: flex;
+}
+
+.btn1{
+  margin-top: 30px;
+  background-color: lightskyblue;
+}

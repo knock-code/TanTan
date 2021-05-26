@@ -1,0 +1,24 @@
+<!--pages/message/message.wxml-->
+<!-- 消息页面 -->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">回复</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">系统</view>
+</view>
+ 
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item><view>
+    <!-- 回复界面 -->
+    <view class='content'>
+      <block wx:for="{{artlist}}">
+        <view class='artImg'>
+          <image src='{{item.imag}}'></image>
+        </view>
+        <view class='art'>{{item.art}}</view>
+      </block>
+    </view>
+    嘻嘻
+  </view></swiper-item>
+  <swiper-item><view>
+    <!-- 系统界面 -->
+  </view></swiper-item>
+</swiper>

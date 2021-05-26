@@ -1,0 +1,58 @@
+/* pages/essay/essay.wxss */
+
+page {
+  background-color: rgb(243, 243, 243);
+}
+/*搜索的输入框*/
+.searchService {
+  width: 370px;
+  height: 37px;
+  margin-top: 3px;
+  margin-left: 3px;
+  border:1px solid #000000;
+  border-radius: 8px;
+  background-color:transparent;
+}
+/*搜索图标*/
+.searchIcon {
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+}
+/*搜索的全部*/
+.head {
+  display: flex;
+}
+/*标题*/
+.title {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 25px;
+}
+/*内容*/
+.content {
+  text-indent: 20px;
+  text-align: left;
+  padding-right: 10px;
+  border-radius: 8px;
+  margin-left: 6.5px;
+  width: 100% ;
+  /* 超出自动换行 */
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 3;  /*最多显示5行*/
+  overflow: hidden;  /*超出隐藏*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;  /*强制英文单词自动换行*/
+}
+/*日期*/
+.date {
+  margin-left: 300px;
+}
+
+.item {
+  margin-top: 15px;
+  border-radius: 20px;
+  background: #ffffff;
+  border:1px solid #000000;
+}

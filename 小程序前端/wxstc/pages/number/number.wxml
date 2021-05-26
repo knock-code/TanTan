@@ -1,0 +1,25 @@
+<!--pages/number/number.wxml-->
+<!-- 账号管理界面 -->
+<view>
+  <!-- 头像修改 -->
+  <view class="numberHead">
+    <image class="numberHead1" src="../../images/me_other/yemain01.png"></image>
+  </view>
+  <!-- 昵称修改 -->
+  <view class="numberInfo">
+    <text class="numberText">昵称：</text>
+    <input class="numberInput"/>
+  </view>
+  <!-- 昵称学号 -->
+  <view class="numberInfo">
+    <text class="numberText">学号：</text>
+    <input class="numberInput"/>
+  </view>
+  <!-- 昵称个性签名 -->
+  <view class="numberInfo">
+    <text class="numberText">签名：</text>
+    <input class="numberInput"/>
+  </view>
+  <!-- 保存按钮 -->
+  <button class="button">保存修改</button>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class="user_head">
+    <image class="user_head_image" src="../../images/me_other/yemain01.png"/>
+    <view class="user_grade_name">
+      <text class="user_grade">等级</text>
+      <text>\n</text>
+      <text>\n</text>
+      <text class="user_name">昵称</text>
+    </view>
+  </view>
+  <view class="gexing">
+    <text class="gexingqiangming">个性签名</text>
+  </view>
+  <view class="user_line"></view>
+  <view class="v1">
+    <text class="t1" bindtap="skipUserCenter">个人中心>></text>
+    <view class="vv1">
+      <view>
+        <image class="i1" bindtap="skipUserCenter" src="../../images/me_other/wenzhangIcon.png"/>
+        <text class="tt1">文章</text>
+      </view>
+      <view>
+        <image class="i1" bindtap="skipUserCenter" src="../../images/me_other/shoucang.png"/>
+        <text class="tt1">收藏</text>
+      </view>
+      <view>
+        <image class="i1" bindtap="skipUserCenter" src="../../images/me_other/zuijin.png"/>
+        <text class="tt1">最近</text>
+      </view>
+    </view>
+  </view>
+  <view class="v2" bindtap="skipNumber">
+    <image class="i2" src="../../images/me_other/zhanghao.png"/>
+    <text class="tt2">账号</text>
+    <text class="tt3">〉</text>
+  </view>
+  <view class="v2" bindtap="skipSetting">
+    <image class="i2" src="../../images/me_other/shezhi.png"/>
+    <text class="tt2">设置</text>
+    <text class="tt3">〉</text>
+  </view>
+</view>

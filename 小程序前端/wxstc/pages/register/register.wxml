@@ -1,0 +1,24 @@
+<!--pages/register/register.wxml-->
+<view>
+  <view class="userinfo"  bindlongtap="changeAvatar">
+    <text>长按选取头像</text>
+    <!--image引入图片相当于img-->
+    <image class="userinfo-avatar" src="{{userInfo}}"       background-size="cover"></image>
+  </view>
+  <form bindsubmit="onRegister">
+    <view class="v1">
+      <text>账号：</text>
+      <input name="number" maxlength="16" placeholder="最多16个字符" />
+    </view>
+    <view class="v1">
+      <text >密码：</text>
+      <input name="password" type="password" maxlength="8" placeholder="6~8位英文数字结合"/>
+    </view>
+    <view class="v1">
+      <text>学号：</text>
+      <input name="studentId" type="number" maxlength="9" placeholder="请输入9位学号"/>
+    </view>
+
+    <button class="btn1" form-type="submit">注册</button>
+  </form>
+</view>

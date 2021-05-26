@@ -1,0 +1,116 @@
+page {
+  background-color:#F5F5F5;
+}
+
+/*设置头像为圆角*/
+.user_head {
+  display: flex;
+}
+.user_head_image {
+  margin-top: 40px;
+  margin-left: 40px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  overflow:hidden;
+}
+/*等级、昵称位置*/
+.user_grade_name {
+  margin-top: 80px;
+  margin-left: 90px;
+}
+/*等级大小，背景*/
+.user_grade {
+  font-family:"仿宋";
+  font-weight: bold;
+}
+.user_name {
+  font-size: 20px;
+}
+/*个性签名样式*/
+.gexing {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 300px;
+  border:1px solid #000000;
+}
+
+/*分割线设置*/
+.user_line {
+  height: 10px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(173, 228, 245);
+  border-radius: 10px;
+}
+
+.v1 {
+  border: 2px solid #000000;
+  background-color: #ffff;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 180px;
+}
+
+.t1 {
+  font-size: 20px;
+  margin-left: 280px;
+}
+
+/*横向排布*/
+.vv1 {
+  display: flex;
+}
+
+/*服务图标样式*/
+.i1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 21px;
+  border: 2px solid #fdc0c0;
+  background-color: rgba(159, 217, 255, 0.534);
+  height: 100px;
+  width: 100px;
+  border-radius: 40px;
+}
+
+/*服务图标文字样式*/
+.tt1 {
+  /*font-style: italic; 斜体*/
+  font-weight: bold; /*粗体*/
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.v2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border: 1px solid #000000;
+  background-color: #ffff;
+  border-radius: 10px;
+  display: flex;    /*设置显示样式**/
+  align-items: center;    /**子view垂直居中*/
+  vertical-align: center; /**垂直居中*/
+  /*justify-content: center; /**内容居中*/
+  /*flex-direction:row;*/
+}
+
+.i2 {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.tt2 {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.tt3 {
+  font-weight: bold; /*粗体*/
+  margin-left: 220px;
+}

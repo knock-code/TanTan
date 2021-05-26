@@ -1,0 +1,58 @@
+/* pages/userCenter/userCenter.wxss */
+page{
+  background-color: rgb(242, 243, 243);
+}
+
+.TopBackground{
+  display: flex;
+  height: 250px;
+  background-color: khaki;
+}
+
+.info{
+  display: flex;
+}
+
+.info_bottom{
+  padding-top: 210px;
+  margin-left: 20px;
+}
+
+.userCenter_head{
+  margin-top: 180px;
+}
+
+.userCenter_head01{
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  position: absolute;
+  right: 40px;
+}
+
+/* 选项卡部分布局 */
+.swiper-tab{
+  margin-top: 70px;
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 33%; 
+  color:#000000;
+}
+/* 选中指示器变化 */
+.active{
+  background-color: lightgreen;
+  color:#ffffff;
+  font-weight: bold;
+  /* border-bottom: 4rpx solid #F65959;
+  border-top: 4rpx solid #F65959;
+  border-left: 4rpx solid #F65959;
+  border-right: 4rpx solid #F65959; */
+}

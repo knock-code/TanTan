@@ -1,0 +1,44 @@
+/* pages/message/message.wxss */
+/* pages/detail/detail.wxss */
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 50%; 
+  color:#434343;
+}
+.active{
+  color:#F65959;
+  border-bottom: 4rpx solid #F65959;
+}
+
+/* 选中的中界面布局居中显示 */
+swiper{
+ /* text-align: center; */
+}
+
+.artImg {
+  width: 30%;
+}
+ 
+.art {
+  width: 70%;
+}
+ 
+.artImg image {
+  width: 100%;
+  height: 150rpx;
+}
+ 
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

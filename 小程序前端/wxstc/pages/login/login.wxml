@@ -1,0 +1,18 @@
+<!--pages/request/request.wxml-->
+<view>
+  <form bindsubmit="eventhandle">
+  <view class="v1">
+    <text class="t1">账号：</text>
+    <input class="in1" maxlength="16" placeholder="最多16个字符" name="username"/>
+  </view>
+  <view class="v1">
+    <text class="t1">密码：</text>
+    <input class="in1" type="password" maxlength="8" placeholder="6~8位英文数字结合" name="password"/>
+  </view>
+  <button class="btn1" form-type="submit">登录</button>
+  </form>
+
+  <view class="v2" bindtap="skipRegister">
+    <text class="t2">没有账号，点击注册</text>
+  </view>
+</view>

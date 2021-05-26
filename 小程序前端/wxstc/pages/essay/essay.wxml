@@ -1,0 +1,15 @@
+<!--pages/essay/essay.wxml-->
+<view class="essayList" style="display:flex; flex-direction:column" >
+  <view class="head">
+    <input class="searchService" value="热门"/>
+  <image class="searchIcon" src="../../images/me_other/zhanghu01.png"/>
+  </view>
+  <block wx:for="{{listData.essayList}}">
+    <view class="item" bindtap="clickEssay" data-essayinfo="{{item}}" style="display:flex; flex-direction:column">
+    <text class="title">{{item.essay_title}}</text>
+    <text class="content">{{item.essay_content}}</text>
+    <text class="date">{{item.essay_time}}</text>
+  </view>
+  </block>
+</view>
+

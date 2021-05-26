@@ -1,0 +1,27 @@
+<!--pages/setPd/setPd.wxml-->
+<!-- 修改密码页面 -->
+<view>
+  <!-- 原密码 -->
+  <view class="numberInfo">
+    <text class="numberText">原密码：</text>
+    <input class="numberInput" type="password"/>
+  </view>
+  <!-- 新密码 -->
+  <view class="numberInfo">
+    <text class="numberText">新密码：</text>
+    <input class="numberInput" type="password"/>
+  </view>
+  <!-- 新密码 -->
+  <view class="numberInfo">
+    <text class="numberText">新密码：</text>
+    <input class="numberInput" type="password"/>
+  </view>
+
+  <view class="button">
+    <!-- 保存按钮 -->
+    <button class="button1" style="width:30vw">保存</button>
+    <!-- 保存按钮 -->
+    <button class="button2" style="width:30vw">取消</button>
+  </view>
+  
+</view>

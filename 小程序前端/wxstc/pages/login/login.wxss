@@ -1,0 +1,34 @@
+/* pages/request/request.wxss */
+.v1{
+  display: flex;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.t1{
+  font-size: 24px;
+}
+
+.in1{
+  width: 250px;
+  margin-top: 5px;
+  /* border: 5rpx solid rgb(63, 228, 30); */
+  border-bottom: 2px solid rgb(129, 209, 255);
+  font-size: 24px;
+}
+
+.btn1{
+  margin-top: 50px;
+  background-color: rgb(129, 209, 255);
+}
+
+.v2 {
+  margin-top: 20px;
+  margin-left: 135px;
+  background-color: rgb(255, 233, 145);
+  width: max-content;
+}
+
+.t2 {
+  font-weight: bold;
+}

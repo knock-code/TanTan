@@ -1,0 +1,26 @@
+/* pages/setting/setting.wxss */
+page{
+  background-color: rgb(243, 243, 243);
+}
+.setPd{
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 3rpx solid #000000;
+  padding-left: 20px;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+	border-radius: 10rpx;
+}
+.setExit{
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 3rpx solid #36b0e0;
+  padding-left: 20px;
+  width: 320px;
+  background-color: rgb(243, 108, 108);
+	border-radius: 10rpx;
+}

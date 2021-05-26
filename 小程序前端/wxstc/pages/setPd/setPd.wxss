@@ -1,0 +1,29 @@
+/* pages/setPd/setPd.wxss */
+.numberInfo{
+  display: flex;
+  margin-left: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.numberInput{
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.numberText{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button{
+  display: flex;
+  margin-top: 80px;
+}
+.button1{ 
+  background-color: lightskyblue;
+}
+.button2{
+  background-color: rgb(218, 218, 218);
+}

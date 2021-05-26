@@ -1,0 +1,44 @@
+{
+  "entryPagePath": "pages/login/login",
+  "pages":[
+    "pages/essay/essay",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/essayInfo/essayInfo",
+    "pages/userCenter/userCenter",
+    "pages/number/number",
+    "pages/setting/setting",
+    "pages/setPd/setPd",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle":"white",
+    "list": [{
+      "selectedIconPath": "images/bottomBar/yijianfankui01.png",
+      "iconPath": "images/bottomBar/yijianfankui01.png",
+      "pagePath": "pages/essay/essay",
+      "text": "帖文"
+    }, {
+      "selectedIconPath": "images/bottomBar/tuichudenglu01.png",
+      "iconPath": "images/bottomBar/tuichudenglu01.png",
+      "pagePath": "pages/message/message",
+      "text": "消息"
+    }, {
+      "selectedIconPath": "images/bottomBar/gerenxinxi01.png",
+      "iconPath": "images/bottomBar/gerenxinxi01.png",
+      "pagePath": "pages/user/user",
+      "text": "我的"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#AFEEEE",
+    "navigationBarTitleText": "谈坛",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
