@@ -1,0 +1,7 @@
+com\example\wxstc\mapper\UserMapper.class
+com\example\wxstc\controller\UserController.class
+com\example\wxstc\server\UserService.class
+com\example\wxstc\entity\User.class
+com\example\wxstc\WxstcApplication.class
+com\example\wxstc\entity\Response.class
+com\example\wxstc\serverImpl\UserServiceImpl.class

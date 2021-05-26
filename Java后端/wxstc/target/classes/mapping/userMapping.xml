@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.wxstc.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.wxstc.entity.User">
+        <result column="user_id" jdbcType="INTEGER" property="user_id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="user_name"/>
+        <result column="user_icon" jdbcType="VARCHAR" property="user_icon"/>
+        <result column="user_password" jdbcType="VARCHAR" property="user_password"/>
+        <result column="user_studentId" jdbcType="VARCHAR" property="user_studentId"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        `user_id`,
+        `user_name`,
+        `user_icon`,
+        `user_password`,
+        `user_studentId`
+    </sql>
+
+    <insert id="register" parameterType="com.example.wxstc.entity.User">
+        INSERT INTO `tb_user` VALUES (#{user_id},#{user_name},#{user_icon},#{user_password},#{user_studentId})
+    </insert>
+    <select id="login" resultType="com.example.wxstc.entity.User">
+        SELECT * FROM `tb_user` WHERE user_name = #{username}
+    </select>
+    <select id="selectStudentId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM `tb_user`
+        WHERE `user_studentId` = #{studentId}
+    </select>
+
+    <!--根据文章id/或查询作者昵称头像-->
+    <select id="queryUserByEssayId" resultType="com.example.wxstc.entity.User">
+        SELECT tb_user.`user_name`,tb_user.`user_icon`
+        FROM tb_essay,tb_user
+        WHERE tb_essay.`essay_id` = #{essay_id} AND tb_essay.`user_id` = tb_user.`user_id`
+    </select>
+
+    <!--根据评论中的用户编号查询用户昵称和头像-->
+    <select id="queryUserByCommentUserId" resultType="com.example.wxstc.entity.User">
+        select user_name,user_icon
+        from tb_user
+        where user_id = #{user_id}
+    </select>
+</mapper>

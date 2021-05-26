@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-/mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.wxstc.mapper.EssayDao">
+
+    <resultMap id="ESSAY_COMMENT" type="com.example.wxstc.entity.Essay">
+        <id property="essay_id" column="essay_id"/>
+        <result property="essay_title" column="essay_title"/>
+        <result property="essay_content" column="essay_content"/>
+        <result property="essay_time" column="essay_time"/>
+        <result property="essay_like" column="essay_like"/>
+        <result property="user_id" column="user_id"/>
+        <collection property="comments" ofType="com.example.wxstc.entity.Comment" column="essay_id">
+            <id property="comment_id" column="comment_id"/>
+            <result property="comment_content" column="comment_content"/>
+            <result property="comment_time" column="comment_time"/>
+            <result property="comment_like" column="comment_like"/>
+            <result property="user_id" column="user_id"/>
+            <result property="essay_id" column="essay_id"/>
+        </collection>
+
+    </resultMap>
+
+    <!--查询全部文章-->
+    <select id="selectAllEssay" resultType="com.example.wxstc.entity.Essay">
+        select *
+        from tb_essay
+    </select>
+
+    <select id="selectEssayComment" resultMap="ESSAY_COMMENT" parameterType="java.lang.Integer">
+        SELECT tb_essay.*, tb_comment.*
+        FROM tb_essay
+        INNER JOIN tb_comment
+        ON tb_essay.essay_id = tb_comment.essay_id
+        WHERE tb_essay.essay_id = #{essay_id}
+    </select>
+
+</mapper>
